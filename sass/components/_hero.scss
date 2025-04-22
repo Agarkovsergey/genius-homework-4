@@ -1,0 +1,38 @@
+.hero {
+  background: url(./../images/hero_bg@3x.png) no-repeat right;
+  background-size: contain;
+  min-height: 686px;
+  margin-bottom: 50px;
+
+  .container {
+    padding-top: 122px;
+    padding-left: 180px;
+  }
+  .hero__sub-title {
+    margin-bottom: 16px;
+  }
+  .hero__title {
+    margin-bottom: 40px;
+  }
+
+  .hero__button {
+    width: 281px;
+    height: 53px;
+    border-radius: 32px;
+    margin-bottom: 14px;
+    border: 1px solid $button-background-color;
+    background-color: $button-background-color;
+    color: $button-text-color;
+    &:hover {
+      background-color: $primary-background-color;
+      color: $secondary-text-color;
+    }
+  }
+  .hero__text {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $dark-grey-color;
+    width: 280px;
+    text-align: center;
+  }
+}

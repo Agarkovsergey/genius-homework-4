@@ -1,0 +1,71 @@
+.footer {
+  background: url(./../images/pexels-photo-8101532-PhotoRoom1.png) no-repeat bottom right, url(./../images/footer.png);
+  background-color: #011c44;
+  padding: 56px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .footer-nav {
+      .footer-nav__list {
+        .footer-nav__item {
+          &:not(:last-child) {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+    .footer-address {
+      .footer-address__list {
+        .footer-address__item {
+          margin-bottom: 16px;
+        }
+      }
+    }
+    .socials__list {
+      display: flex;
+    }
+    .socials {
+      .socials__list {
+        .socials__item {
+          &:not(:last-child) {
+            margin-right: 24px;
+          }
+          .socials__link {
+            .icon {
+              fill: $white-color;
+            }
+          }
+          &:hover {
+            .icon {
+              fill: $accent-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  a {
+    color: $white-color;
+    &:hover {
+      color: $secondary-text-color;
+    }
+    &.primary {
+      color: $accent-color;
+      font-weight: 700;
+    }
+  }
+  .copy {
+    :first-child {
+      color: $white-color;
+      font-size: 16px;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    :last-child {
+      font-size: 13px;
+      line-height: 1;
+      color: $grey-color;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.our-jobs {
+  background: url(./../images/wave_bg.png);
+  background-repeat: no-repeat;
+
+  background-position: top;
+  background-size: cover;
+  // background: linear-gradient(
+  //   38.2deg,
+  //   rgba(43, 127, 255, 0.2) 39.74%,
+  //   rgba(43, 127, 255, 0) 54.16%,
+  //   rgba(43, 127, 255, 0) 66.66%
+  // );
+
+  padding-top: 350px;
+  padding-bottom: 100px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .our-jobs__item {
+      background-color: $white-color;
+      border-radius: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 32px;
+      &:not(:last-child) {
+        margin-right: 56px;
+      }
+      .icon {
+        fill: $accent-color;
+      }
+      .our-jobs__text {
+        text-align: center;
+      }
+    }
+  }
+}

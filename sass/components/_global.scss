@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+/* начало болка прижимает футер к низу страници на случай если у нас будет мало контента, и мы не хотим видеть ниже футера пустоту */
+/* так же необходимо задать height:100%; для body и html, и задать display: flex; flex-direction: column; для body */
+header {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+main {
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+footer {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+/* конец блока прижимает футер к низу страници на случай если у нас будет мало контента, и мы не хотим видеть ниже футера пустоту */
+h1 {
+  font-size: 140px;
+  line-height: 0.82;
+  text-transform: capitalize;
+  color: $accent-color;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: $primary-text-color;
+  transition: color 0.2s ease-out;
+  svg {
+    transition: color 0.2s ease-out;
+  }
+  &:hover {
+    color: $secondary-text-color;
+  }
+  &.site-nav__link--current {
+    color: $accent-color;
+    font-weight: 700;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+address {
+  font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
+}
+.section-title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 48px;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+  span {
+    color: $secondary-text-color;
+  }
+}
+.button {
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
