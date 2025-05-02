@@ -19,19 +19,22 @@
   margin-top: 16px;
   .container {
     display: flex;
+    position: relative;
     .features-info {
-      margin-right: 32px;
-      width: 48%;
       h2 {
         text-align: left;
         span {
           text-transform: capitalize;
         }
       }
+      // margin-right: 32px;
+      // width: 48%;
       .features-text {
-        font-size: 22px;
+        font-size: 18px;
+        padding-bottom: 16px;
+        // font-size: 22px;
         line-height: 1.7;
-        padding-bottom: 40px;
+        // padding-bottom: 40px;
         span {
           text-transform: capitalize;
           font-weight: 600;
@@ -39,23 +42,29 @@
       }
     }
     .features_image {
-      width: 48%;
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-
-      .star_one {
-        position: absolute;
-        top: 50%;
-        left: 28%;
-        img {
-          animation-name: rotatescalebox;
-          animation-duration: 2s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-        }
+      // width: 48%;
+      // max-width: 500px;
+      // display: flex;
+      // flex-direction: column;
+      // position: relative;
+      .star {
+        display: none;
       }
+      .star_one {
+        display: block;
+        position: absolute;
+        top: 98%;
+        left: 75%;
+        // top: 50%;
+        // left: 28%;
+        // img {
+        //   animation-name: rotatescalebox;
+        //   animation-duration: 2s;
+        //   animation-timing-function: linear;
+        //   animation-iteration-count: infinite;
+        // }
+      }
+
       .star_two {
         position: absolute;
         top: 9%;
@@ -80,13 +89,14 @@
       }
 
       .features_image__item {
-        img {
-          border-radius: 50%;
-        }
-        &:last-child {
-          margin-top: 40px;
-          align-self: flex-end;
-        }
+        display: none;
+        // img {
+        //   border-radius: 50%;
+        // }
+        // &:last-child {
+        //   margin-top: 40px;
+        //   align-self: flex-end;
+        // }
       }
     }
   }

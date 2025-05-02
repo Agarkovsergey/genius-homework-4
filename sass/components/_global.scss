@@ -92,7 +92,8 @@ address {
 .container {
   margin: 0 auto;
   @media screen and (min-width: 360px) {
-    width: 360px;
+    margin: 10px 20px 0;
+    width: 320px;
   }
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -112,6 +113,10 @@ address {
 .section-title {
   font-weight: 500;
   font-size: 32px;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+  margin-bottom: 24px;
   @media screen and (min-width: 1200px) {
     font-weight: 700;
     font-size: 64px;
@@ -120,10 +125,8 @@ address {
 
   line-height: 1;
   text-align: center;
-  margin-bottom: 48px;
-  &::first-letter {
-    text-transform: uppercase;
-  }
+  // margin-bottom: 48px;
+
   span {
     color: $secondary-text-color;
   }

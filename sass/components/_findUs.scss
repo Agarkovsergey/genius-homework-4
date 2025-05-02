@@ -1,6 +1,9 @@
 .find-us {
-  margin-bottom: 94px;
+  // margin-bottom: 94px;
   .container {
+    // margin: 0;
+    // padding: 10px 20px 0;
+    // width: 100%;
     @media screen and (min-width: 1200px) {
       display: flex;
       flex-wrap: wrap;
@@ -10,6 +13,7 @@
     .map-container {
       .map_frame {
         width: 100%;
+        min-height: 232px;
         margin: 5px 5px;
         @media screen and (min-width: 1200px) {
           border-radius: 32px;
@@ -26,7 +30,8 @@
       background: url(./../images/form_bg.png);
       background-repeat: no-repeat;
       background-color: #011c44;
-      padding: 48px 56px;
+      padding: 42px 24px;
+      // padding: 48px 56px;
 
       .form {
         display: flex;
@@ -49,7 +54,8 @@
         }
         input {
           color: $white-color;
-          width: 310px;
+          width: 240px;
+          // width: 310px;
           height: 52px;
           border-radius: 32px;
           border: 2px solid #747272;
@@ -63,7 +69,8 @@
       }
 
       .form__btn-submit {
-        width: 281px;
+        width: 241px;
+        // width: 281px;
         height: 53px;
         border-radius: 32px;
         margin-bottom: 8px;
