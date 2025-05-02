@@ -42,13 +42,16 @@ footer {
 }
 /* конец блока прижимает футер к низу страници на случай если у нас будет мало контента, и мы не хотим видеть ниже футера пустоту */
 h1 {
-  font-size: 140px;
-  line-height: 0.82;
   text-transform: capitalize;
   color: $accent-color;
   font-family: 'Play', sans-serif;
   font-weight: 700;
   font-style: normal;
+  line-height: 0.82;
+  font-size: 54px;
+  @media screen and (min-width: 1200px) {
+    font-size: 140px;
+  }
 }
 a {
   text-decoration: none;
@@ -87,24 +90,34 @@ address {
   overflow: hidden;
 }
 .container {
-  padding-left: 100px;
-  padding-right: 100px;
-
   margin: 0 auto;
+  @media screen and (min-width: 360px) {
+    width: 360px;
+  }
   @media screen and (min-width: 480px) {
     width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1200px) {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 1200px;
+  }
   @media screen and (min-width: 1440px) {
     width: 1440px;
   }
 }
 .section-title {
+  font-weight: 500;
+  font-size: 32px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 64px;
+  }
   width: 100%;
-  font-weight: 700;
-  font-size: 64px;
+
   line-height: 1;
   text-align: center;
   margin-bottom: 48px;

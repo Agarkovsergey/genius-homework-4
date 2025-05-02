@@ -24,6 +24,9 @@
       width: 48%;
       h2 {
         text-align: left;
+        span {
+          text-transform: capitalize;
+        }
       }
       .features-text {
         font-size: 22px;
@@ -46,28 +49,34 @@
         position: absolute;
         top: 50%;
         left: 28%;
-        animation-name: rotatescalebox;
-        animation-duration: 1s;
-        animation-timing-function: ease;
-        animation-iteration-count: 2;
+        img {
+          animation-name: rotatescalebox;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
       }
       .star_two {
         position: absolute;
         top: 9%;
         left: 83%;
-        animation-name: rotatescalebox;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: 2;
+        img {
+          animation-name: rotatescalebox;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
       }
       .star_three {
         position: absolute;
         top: 39%;
         left: 78%;
-        animation-name: rotatescalebox;
-        animation-duration: 1s;
-        animation-timing-function: ease-in;
-        animation-iteration-count: 2;
+        img {
+          animation-name: rotatescalebox;
+          animation-duration: 1s;
+          animation-timing-function: ease-in;
+          animation-iteration-count: infinite;
+        }
       }
 
       .features_image__item {

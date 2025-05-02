@@ -16,6 +16,7 @@
   .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .our-jobs__item {
       background-color: $white-color;
       border-radius: 32px;

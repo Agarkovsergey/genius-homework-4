@@ -1,15 +1,24 @@
 .find-us {
   margin-bottom: 94px;
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row-reverse;
+    }
     .map-container {
-      margin-right: 30px;
-      // width: 47%;
-      margin-left: 32px;
       .map_frame {
-        border-radius: 32px;
+        width: 100%;
+        margin: 5px 5px;
+        @media screen and (min-width: 1200px) {
+          border-radius: 32px;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+        margin-left: 32px;
+        width: 605px;
       }
     }
     .form-container {
