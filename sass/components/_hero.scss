@@ -1,12 +1,34 @@
 .hero {
-  background: url(./../images/hero_bg_mobile@3x.png) no-repeat right;
+  background: url(./../images/hero_bg_mobile.png) no-repeat right;
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(./../images/hero_bg_mobile@2x.png);
+    }
+  }
   text-align: center;
   padding-top: 75px;
   min-height: 360px;
   background-size: cover;
   @media screen and (min-width: 768px) {
-    background: url(./../images/hero_bg@3x.png) no-repeat right;
     background-size: cover;
+  }
+  @media screen and (min-width: 1200px) {
+    .hero {
+      background: url(./../images/hero_bg@1x.png) no-repeat right;
+      min-height: 686px;
+      background-size: contain;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: url(./../images/hero_bg@2x.png);
+      }
+    }
   }
 
   // background-size: contain;
