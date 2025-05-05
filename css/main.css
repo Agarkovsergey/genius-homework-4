@@ -136,7 +136,7 @@ address {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 440px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -220,11 +220,17 @@ header .container .logo-container .logo-container__link .icon {
     background-color: #ffffff;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    padding: 60px 0;
   }
   header .container .menu-container.is-open {
     display: block;
+    padding-left: 25px;
+    top: 75px;
     z-index: 100;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  header .container .menu-container.is-open .nav-container .site-nav .site-nav__list .site-nav__item {
+    margin-bottom: 16px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -283,13 +289,22 @@ header .container .btn-menu {
   }
 }
 header .container .btn-menu .icon--menu {
+  display: none;
+}
+header .container .btn-menu .icon--menu.is-open {
+  display: block;
+}
+header .container .btn-menu .icon--close {
+  display: none;
+}
+header .container .btn-menu .icon--close.is-open {
   display: block;
 }
 header .container .btn-menu svg {
   fill: #ffffff;
 }
 header .container .btn-menu svg .icon--close {
-  fill: #4a4a4a;
+  fill: #ffffff;
 }
 
 .hero {
@@ -438,6 +453,14 @@ header .container .btn-menu svg .icon--close {
   padding-top: 104px;
   padding-bottom: 100px;
 }
+@media screen and (min-width: 480px) {
+  .our-jobs {
+    background: url(./../images/wave_bg_mobile.png) no-repeat;
+    background-position-y: 44%;
+    background-size: cover;
+    padding-top: 79px;
+  }
+}
 .our-jobs .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -487,6 +510,13 @@ header .container .btn-menu svg .icon--close {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 480px) {
+  .our-procedures .slider-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .our-procedures .slider-container .slider-container__arrow {
   display: none;
@@ -792,7 +822,7 @@ header .container .btn-menu svg .icon--close {
   position: absolute;
   top: 50px;
   left: 50%;
-  max-width: 723px;
+  max-width: 100%;
   border-radius: 38px;
   background-color: #ffffff;
   -webkit-transform: translatex(-50%) scale(1);
@@ -807,7 +837,7 @@ header .container .btn-menu svg .icon--close {
   background: url(./../images/form_bg.png);
   background-repeat: no-repeat;
   background-color: #011c44;
-  padding: 42px 144px;
+  padding: 42px 24px;
 }
 .backdrop .modal .form-container .form {
   display: -webkit-box;

@@ -20,8 +20,8 @@
     position: absolute;
     top: 50px;
     left: 50%;
-    // width: 50%;
-    max-width: 723px;
+    max-width: 100%;
+    // max-width: 723px;
     border-radius: 38px;
     background-color: $white-color;
     transform: translatex(-50%) scale(1);
@@ -31,7 +31,8 @@
       background: url(./../images/form_bg.png);
       background-repeat: no-repeat;
       background-color: #011c44;
-      padding: 42px 144px;
+      padding: 42px 24px;
+      // padding: 42px 144px;
       .form {
         display: flex;
         flex-direction: column;

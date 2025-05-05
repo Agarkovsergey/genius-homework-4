@@ -29,8 +29,15 @@
           </a>
         </div>
         <button type="button" class="btn-menu">
-          <svg width="40" height="40" aria-label="меню">
-            <use href="./images/menu_sprite.svg#icon-menu" class="btn-menu__icon icon icon--menu menu-btn-open"></use>
+          <svg width="24" height="24" aria-label="меню">
+            <use
+              href="./images/menu_sprite.svg#icon-menu"
+              class="btn-menu__icon icon icon--menu menu-btn-open is-open"
+            ></use>
+            <use
+              href="./images/symbol-defs.svg#icon-cross"
+              class="btn-menu__icon icon icon--close menu-btn-close"
+            ></use>
           </svg>
         </button>
         <div class="menu-container mobile-menu">
@@ -74,12 +81,6 @@
               </li>
             </ul>
           </div>
-          <svg width="40" height="40" aria-label="меню">
-            <use
-              href="./images/symbol-defs.svg#icon-cross"
-              class="btn-menu__icon icon icon--close menu-btn-close"
-            ></use>
-          </svg>
         </div>
       </div>
     </header>

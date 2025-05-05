@@ -4,6 +4,9 @@
     display: flex;
     align-items: center;
     margin-bottom: 32px;
+    @media screen and (min-width: 480px) {
+      justify-content: center;
+    }
     .slider-container__arrow {
       display: none;
     }
