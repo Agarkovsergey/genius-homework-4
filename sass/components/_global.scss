@@ -90,18 +90,18 @@ address {
   overflow: hidden;
 }
 .container {
-  margin: 0 auto;
   @media screen and (min-width: 360px) {
-    margin: 10px 20px 0;
+    margin: 10px auto;
     width: 320px;
   }
   @media screen and (min-width: 480px) {
     width: 440px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 728px;
   }
   @media screen and (min-width: 1200px) {
+    margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
     width: 1200px;

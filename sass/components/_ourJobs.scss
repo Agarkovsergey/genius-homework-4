@@ -9,6 +9,10 @@
     background-size: cover;
     padding-top: 79px;
   }
+  @media screen and (min-width: 768px) {
+    background: url(./../images/wave_bg.png) no-repeat;
+    padding-top: 100px;
+  }
   // background: url(./../images/wave_bg.png);
   // background-repeat: no-repeat;
   // background-position: top;
@@ -26,6 +30,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
+
     .our-jobs__item {
       background-color: $white-color;
       border-radius: 32px;
@@ -37,9 +45,13 @@
       &:not(:last-child) {
         margin-bottom: 16px;
       }
-      // &:not(:last-child) {
-      //   margin-right: 56px;
-      // }
+      @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+          margin-right: 35px;
+        }
+      }
+      // margin-right: 56px;
+
       .icon {
         fill: $accent-color;
       }

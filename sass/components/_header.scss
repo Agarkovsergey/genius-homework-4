@@ -1,17 +1,23 @@
 header {
   width: 100%;
   padding: 16px 0;
-  // padding: 32px 0;
-  // background: rgba(255, 255, 255, 0.25);
-  // backdrop-filter: blur(10px);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  @media screen and (min-width: 768px) {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  // padding: 32px 0;
+  // backdrop-filter: blur(10px);
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     .logo-container {
+      @media screen and (min-width: 768px) {
+        margin-right: 25px;
+      }
       // margin-right: 240px;
       .logo-container__link {
         .icon {
@@ -72,13 +78,17 @@ header {
           .site-nav__list {
             display: flex;
             flex-direction: column;
-            // flex-direction: row;
-            // justify-content: space-between;
-            // .site-nav__item {
-            //   &:not(:last-child) {
-            //     margin-right: 56px;
-            //   }
-            // }
+            @media screen and (min-width: 768px) {
+              flex-direction: row;
+              justify-content: space-between;
+              .site-nav__item {
+                &:not(:last-child) {
+                  margin-right: 30px;
+                }
+              }
+            }
+
+            //
           }
         }
       }

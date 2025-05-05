@@ -21,14 +21,18 @@
     display: flex;
     position: relative;
     .features-info {
+      @media screen and (min-width: 768px) {
+        margin-right: 32px;
+        width: 48%;
+      }
+
       h2 {
         text-align: left;
         span {
           text-transform: capitalize;
         }
       }
-      // margin-right: 32px;
-      // width: 48%;
+
       .features-text {
         font-size: 18px;
         padding-bottom: 16px;
@@ -42,33 +46,47 @@
       }
     }
     .features_image {
-      // width: 48%;
-      // max-width: 500px;
-      // display: flex;
-      // flex-direction: column;
-      // position: relative;
+      @media screen and (min-width: 768px) {
+        width: 48%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
       .star {
         display: none;
+        @media screen and (min-width: 768px) {
+          display: block;
+        }
       }
       .star_one {
         display: block;
         position: absolute;
         top: 98%;
         left: 75%;
+        @media screen and (min-width: 768px) {
+          top: 47%;
+          left: 23%;
+          img {
+            animation-name: rotatescalebox;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+        }
         // top: 50%;
         // left: 28%;
-        // img {
-        //   animation-name: rotatescalebox;
-        //   animation-duration: 2s;
-        //   animation-timing-function: linear;
-        //   animation-iteration-count: infinite;
-        // }
       }
 
       .star_two {
         position: absolute;
-        top: 9%;
-        left: 83%;
+        @media screen and (min-width: 768px) {
+          top: 9%;
+          left: 90%;
+        }
+        // top: 9%;
+        // left: 83%;
         img {
           animation-name: rotatescalebox;
           animation-duration: 1s;
@@ -78,8 +96,12 @@
       }
       .star_three {
         position: absolute;
-        top: 39%;
-        left: 78%;
+        @media screen and (min-width: 768px) {
+          top: 40%;
+          left: 85%;
+        }
+        // top: 39%;
+        // left: 78%;
         img {
           animation-name: rotatescalebox;
           animation-duration: 1s;
@@ -90,13 +112,16 @@
 
       .features_image__item {
         display: none;
-        // img {
-        //   border-radius: 50%;
-        // }
-        // &:last-child {
-        //   margin-top: 40px;
-        //   align-self: flex-end;
-        // }
+        @media screen and (min-width: 768px) {
+          display: block;
+          img {
+            border-radius: 50%;
+          }
+          &:last-child {
+            margin-top: 40px;
+            align-self: flex-end;
+          }
+        }
       }
     }
   }
