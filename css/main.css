@@ -238,6 +238,7 @@ header .container .logo-container .logo-container__link .icon {
     position: absolute;
     top: 9%;
     right: 7%;
+    fill: #2b7fff;
   }
   header .container .mobile-menu.is-open .nav-container {
     margin-top: 32px;
@@ -262,6 +263,9 @@ header .container .logo-container .logo-container__link .icon {
             justify-content: space-between;
   }
   header .container .mobile-menu .icon--close {
+    display: none;
+  }
+  header .container .mobile-menu .logo-container {
     display: none;
   }
 }
@@ -322,21 +326,18 @@ header .container .btn-menu .icon--menu.is-open {
   display: block;
 }
 header .container .btn-menu svg {
-  fill: #ffffff;
-}
-header .container .btn-menu svg .icon--close {
-  fill: #ffffff;
+  fill: #2b7fff;
 }
 
 .hero {
-  background: url(./../images/hero_bg_mobile.png) no-repeat right;
   text-align: center;
   padding-top: 75px;
   min-height: 360px;
   background-size: cover;
+  background: url(./../images/hero_bg_mobile.png) no-repeat right;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .hero {
+  .hero {
     background-image: url(./../images/hero_bg_mobile@2x.png);
   }
 }
@@ -346,19 +347,38 @@ header .container .btn-menu svg .icon--close {
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero .hero {
-    background: url(./../images/hero_bg@1x.png) no-repeat right;
-    min-height: 686px;
+  .hero {
+    background: url(./../images/hero_bg@.png) no-repeat right;
+    min-height: 610px;
     background-size: contain;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero .hero {
+  .hero {
     background-image: url(./../images/hero_bg@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero .container {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 180px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero .hero__sub-title {
+    margin-bottom: 16px;
   }
 }
 .hero .hero__title {
   margin-bottom: 32px;
+}
+@media screen and (min-width: 1200px) {
+  .hero .hero__title {
+    width: 55%;
+    margin-bottom: 40px;
+  }
 }
 .hero .hero__button {
   width: 281px;
@@ -572,6 +592,16 @@ header .container .btn-menu svg .icon--close {
     padding-top: 100px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .our-jobs {
+    background: url(./../images/wave_bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+}
 .our-jobs .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,6 +779,11 @@ header .container .btn-menu svg .icon--close {
 }
 
 @media screen and (min-width: 1200px) {
+  .find-us {
+    margin-bottom: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .find-us .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -863,6 +898,13 @@ header .container .btn-menu svg .icon--close {
   background-color: #011c44;
   padding: 32px 0 66px;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    background: url(./../images/pexels-photo-8101532-PhotoRoom1.png) no-repeat bottom right, url(./../images/footer.png);
+    background-color: #011c44;
+    padding: 32px 0 66px;
+  }
+}
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,11 +937,21 @@ header .container .btn-menu svg .icon--close {
 .footer .container .footer-nav {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer .container .footer-nav {
+    text-align: left;
+  }
+}
 .footer .container .footer-nav .footer-nav__list .footer-nav__item {
   margin-bottom: 16px;
 }
 .footer .container .contacts {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer .container .contacts {
+    text-align: left;
+  }
 }
 .footer .container .contacts .footer-address .footer-address__list .footer-address__item {
   margin-bottom: 16px;
@@ -946,6 +998,11 @@ header .container .btn-menu svg .icon--close {
 }
 .footer .copy {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer .copy {
+    text-align: left;
+  }
 }
 .footer .copy .copy__item:first-child {
   color: #ffffff;

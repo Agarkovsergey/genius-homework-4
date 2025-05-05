@@ -44,6 +44,7 @@ header {
             position: absolute;
             top: 9%;
             right: 7%;
+            fill: $accent-color;
           }
           .nav-container {
             margin-top: 32px;
@@ -73,6 +74,9 @@ header {
           &--close {
             display: none;
           }
+        }
+        .logo-container {
+          display: none;
         }
       }
 
@@ -131,10 +135,7 @@ header {
         }
       }
       svg {
-        fill: $white-color;
-        .icon--close {
-          fill: $white-color;
-        }
+        fill: $accent-color;
       }
     }
   }

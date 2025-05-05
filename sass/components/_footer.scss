@@ -1,8 +1,13 @@
 .footer {
   background: url(./../images/footer.png);
-  // background: url(./../images/pexels-photo-8101532-PhotoRoom1.png) no-repeat bottom right, url(./../images/footer.png);
   background-color: #011c44;
   padding: 32px 0 66px;
+  @media screen and (min-width: 1200px) {
+    background: url(./../images/pexels-photo-8101532-PhotoRoom1.png) no-repeat bottom right, url(./../images/footer.png);
+    background-color: #011c44;
+    padding: 32px 0 66px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -18,6 +23,9 @@
 
     .footer-nav {
       text-align: center;
+      @media screen and (min-width: 1200px) {
+        text-align: left;
+      }
       .footer-nav__list {
         .footer-nav__item {
           // &:not(:last-child) {
@@ -28,6 +36,9 @@
     }
     .contacts {
       text-align: center;
+      @media screen and (min-width: 1200px) {
+        text-align: left;
+      }
       .footer-address {
         .footer-address__list {
           .footer-address__item {
@@ -79,6 +90,9 @@
   }
   .copy {
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
     .copy__item {
       &:first-child {
         color: $white-color;

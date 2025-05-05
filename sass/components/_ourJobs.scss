@@ -13,18 +13,14 @@
     background: url(./../images/wave_bg.png) no-repeat;
     padding-top: 100px;
   }
-  // background: url(./../images/wave_bg.png);
-  // background-repeat: no-repeat;
-  // background-position: top;
-  // background-size: cover;
-  // background: linear-gradient(
-  //   38.2deg,
-  //   rgba(43, 127, 255, 0.2) 39.74%,
-  //   rgba(43, 127, 255, 0) 54.16%,
-  //   rgba(43, 127, 255, 0) 66.66%
-  // );
-
-  // padding-top: 350px;
+  @media screen and (min-width: 1200px) {
+    background: url(./../images/wave_bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
 
   .container {
     display: flex;
