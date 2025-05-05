@@ -336,11 +336,6 @@ header .container .btn-menu svg {
   background-size: cover;
   background: url(./../images/hero_bg_mobile.png) no-repeat right;
 }
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(./../images/hero_bg_mobile@2x.png);
-  }
-}
 @media screen and (min-width: 768px) {
   .hero {
     background-size: cover;
@@ -348,15 +343,10 @@ header .container .btn-menu svg {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background: url(./../images/hero_bg@.png) no-repeat right;
+    background: url(./../images/hero_bg.png) no-repeat right;
     min-height: 610px;
     background-size: contain;
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(./../images/hero_bg@2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
