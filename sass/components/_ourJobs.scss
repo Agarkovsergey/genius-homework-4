@@ -45,8 +45,15 @@
         &:not(:last-child) {
           margin-right: 35px;
         }
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
       }
-      // margin-right: 56px;
+      @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+          margin-right: 56px;
+        }
+      }
 
       .icon {
         fill: $accent-color;

@@ -16,8 +16,9 @@
       .map_frame {
         width: 100%;
         min-height: 232px;
-        margin: 5px 5px;
+
         @media screen and (min-width: 1200px) {
+          margin: 5px 5px;
           border-radius: 32px;
         }
       }

@@ -336,6 +336,11 @@ header .container .btn-menu svg {
   background-size: cover;
   background: url(./../images/hero_bg_mobile.png) no-repeat right;
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(./../images/hero_bg_mobile@2x.png);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-size: cover;
@@ -347,6 +352,11 @@ header .container .btn-menu svg {
     min-height: 610px;
     background-size: contain;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(./../images/hero_bg@2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -388,7 +398,13 @@ header .container .btn-menu svg {
   line-height: 1.5;
   color: #4a4a4a;
   width: 280px;
+  margin: 0 auto;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero .hero__text {
+    margin: 0;
+  }
 }
 
 @-webkit-keyframes rotatescalebox {
@@ -632,6 +648,14 @@ header .container .btn-menu svg {
   .our-jobs .container .our-jobs__item:not(:last-child) {
     margin-right: 35px;
   }
+  .our-jobs .container .our-jobs__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-jobs .container .our-jobs__item:not(:last-child) {
+    margin-right: 56px;
+  }
 }
 .our-jobs .container .our-jobs__item .icon {
   fill: #2b7fff;
@@ -792,10 +816,10 @@ header .container .btn-menu svg {
 .find-us .container .map-container .map_frame {
   width: 100%;
   min-height: 232px;
-  margin: 5px 5px;
 }
 @media screen and (min-width: 1200px) {
   .find-us .container .map-container .map_frame {
+    margin: 5px 5px;
     border-radius: 32px;
   }
 }
@@ -940,6 +964,7 @@ header .container .btn-menu svg {
 }
 @media screen and (min-width: 1200px) {
   .footer .container .contacts {
+    max-width: 225px;
     text-align: left;
   }
 }
