@@ -785,9 +785,7 @@ header .container .btn-menu svg {
   background-color: #2b7fff;
 }
 .procedures-section .carousel-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -804,6 +802,13 @@ header .container .btn-menu svg {
   border-radius: 50%;
   border: 1px solid #4a4a4a;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .procedures-section .carousel-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .procedures-section .carousel-button:hover {
   background-color: #ffffff;
