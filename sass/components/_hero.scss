@@ -1,20 +1,27 @@
 .hero {
   text-align: center;
   padding-top: 75px;
-  min-height: 360px;
+  min-height: 345px;
   background-size: cover;
-  background: url(./../images/hero_bg_mobile.png) no-repeat right;
+  background-image: url(./../images/hero_bg_mobile.png);
+  background-repeat: no-repeat;
+  background-position: right top;
   @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(./../images/hero_bg_mobile@2x.png);
   }
+  @media screen and (min-width: 480px) {
+    min-height: 460px;
+  }
   @media screen and (min-width: 768px) {
     background-size: cover;
   }
   @media screen and (min-width: 1200px) {
-    background: url(./../images/hero_bg.png) no-repeat right;
+    background-image: url(./../images/hero_bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
     min-height: 610px;
     background-size: contain;
     margin-bottom: 60px;
@@ -28,10 +35,14 @@
   }
 
   .container {
+    @media screen and (min-width: 768px) {
+      margin: 5% auto;
+    }
     @media screen and (min-width: 1200px) {
       text-align: left;
       padding-top: 40px;
       padding-left: 180px;
+      margin: 0 auto;
     }
   }
   .hero__sub-title {

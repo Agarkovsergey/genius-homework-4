@@ -110,7 +110,8 @@ address {
     width: 1440px;
   }
 }
-.section-title {
+.section-title,
+.procedures-section__section-title {
   font-weight: 500;
   font-size: 32px;
   &::first-letter {

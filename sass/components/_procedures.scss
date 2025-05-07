@@ -1,51 +1,58 @@
-.our-procedures {
-  margin-bottom: 40px;
-  .slider-container {
+.procedures-section {
+  margin-bottom: 96px;
+  &__slider {
     display: flex;
     align-items: center;
+    gap: 32px;
     margin-bottom: 32px;
-    @media screen and (min-width: 480px) {
-      justify-content: center;
-    }
-    .slider-container__arrow {
-      display: none;
-      @media screen and (min-width: 768px) {
-        display: block;
-      }
-    }
   }
-  .content-wraper {
-    display: flex;
-    @media screen and (min-width: 768px) {
-      justify-content: center;
-    }
-    // margin: 0 32px;
-    // gap: 15px;
-    .slider-content {
+  &__container {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+
+    .format-card {
       position: relative;
-      flex-basis: 100%;
-      &:not(:first-child) {
-        display: none;
-        @media screen and (min-width: 768px) {
-          display: flex;
-        }
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 444px;
+      padding: 24px;
+
+      background-image: linear-gradient(
+        180deg,
+        rgba(49, 38, 26, 0) 55.21%,
+        rgba(49, 38, 26, 0.71) 72.92%,
+        var(--color-primary-dark) 100%
+      );
+      border-radius: 16px;
+      overflow: hidden;
+      &__image {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 120px;
+        border-bottom-left-radius: 120px;
+        border-bottom-right-radius: 4px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
-      @media screen and (min-width: 768px) {
-        flex-basis: calc((100% / 3) - 17px);
-        &:not(:nth-child(3n)) {
-          margin-right: 16px;
-        }
+      &__text {
+        position: absolute;
+        bottom: 5%;
+        left: 55%;
+        transform: translateX(-50%);
+        width: 50%;
+        text-align: center;
+        font-size: 22px;
+        line-height: 1.18;
+        color: $white-color;
+        z-index: 3;
       }
-
-      // flex-basis: calc((100% / 3) - 17px);
-
-      // &:not(:nth-child(3n)) {
-      //   margin-right: 16px;
-      // }
-      // &:not(:nth-last-child(-n + 3)) {
-      //   margin-bottom: 15px;
-      // }
-
       &:after {
         content: '';
         position: absolute;
@@ -64,52 +71,49 @@
         border-top-right-radius: 120px;
         border-bottom-left-radius: 120px;
         border-bottom-right-radius: 4px;
-        @media screen and (min-width: 768px) {
-          border-top-right-radius: 80px;
-          border-bottom-left-radius: 80px;
-        }
-      }
-      .slider-content__image {
-        border-top-left-radius: 4px;
-        border-top-right-radius: 120px;
-        border-bottom-left-radius: 120px;
-        border-bottom-right-radius: 4px;
-        position: relative;
-        @media screen and (min-width: 768px) {
-          border-top-right-radius: 80px;
-          border-bottom-left-radius: 80px;
-        }
-      }
-      .slider-content-text {
-        position: absolute;
-        bottom: 5%;
-        left: 55%;
-        transform: translateX(-50%);
-        width: 50%;
-        text-align: center;
-        font-size: 22px;
-        line-height: 1.18;
-        color: $white-color;
-        z-index: 3;
       }
     }
   }
-
-  .slider-dots {
+  .pagination {
     display: flex;
+    align-items: center;
     justify-content: center;
-    :not(:last-child) {
-      margin-right: 24px;
-    }
-    .slider-dots-item {
-      .dot-icon {
-        fill: $grey-color;
+    gap: 24px;
+
+    &__button {
+      width: 12px;
+      height: 12px;
+      padding: 0;
+      background-color: $dark-grey-color;
+      border-radius: 50%;
+
+      &--active {
+        background-color: $accent-color;
       }
     }
-    .slider-dots-item__current {
-      .dot-icon {
-        fill: $accent-color;
-      }
+  }
+  .carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: $dark-grey-color;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid $dark-grey-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white-color;
+      fill: $accent-color;
+      border: 1px solid $accent-color;
+    }
+
+    &.next {
+      transform: rotate(180deg);
     }
   }
 }
